@@ -1,0 +1,37 @@
+<app-header></app-header>
+<h1>your cart</h1>
+<br>
+<br>
+<div class="table-responsive">
+   <table class="table table-bordered">
+      <tr>
+         <th width="20%">product Name</th>
+         <th width="20%">product Price</th>
+      </tr>
+      <ng-container *ngFor="let p of addToCart">
+         <tr>
+            <td>{{p.Name}}</td>
+            <td>{{p.Price}}</td>
+
+         </tr>
+      </ng-container>
+      <br>
+      <br>
+      <tr>
+         <td colspan="3">The quantity of prodeucts in cart: {{totalItems}}</td>
+      </tr>
+      <tr>
+         <td colspan="3">The price of prodeucts in cart: : {{totalPrice}}</td>
+      </tr>
+      <br>
+      <tr>
+         <button class="nav-link" (click)="deletepro()" type="button" class="btn-btn-warning">clear your cart</button> 
+      </tr>
+
+   </table>
+</div>
+<br>
+<br>
+<br>
+
+<app-footer></app-footer>

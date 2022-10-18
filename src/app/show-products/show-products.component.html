@@ -1,0 +1,21 @@
+<div class="row">
+<ng-container *ngFor="let prudect of Products">
+  <ng-container *ngIf="selectedCategory==prudect.Category;"> 
+      <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header">{{prudect.Category}}</div>
+        <div class="card-body">
+          <h4 name="Name" class="card-title">{{prudect.Name}}</h4>
+          <p class="card-text"><img src="{{prudect.ImgUrl}}"></p>
+          <p name="Price" class="price">{{prudect.Price}}₪</p>
+          
+          <details >
+            <summary>Details</summary>
+            <p>{{prudect.Description}}</p>
+          </details>
+          <br>
+          <button type="button" (click)="addToCart(prudect)">Add to Cart</button>
+        </div>
+      </div>
+  </ng-container>
+</ng-container> 
+</div>

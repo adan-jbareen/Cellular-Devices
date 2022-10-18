@@ -1,0 +1,10 @@
+ <app-header></app-header>
+<div class="d-flex flex-row p-2 justify-content-between">
+  <div class="column ">
+    <app-catagories-prud></app-catagories-prud>
+  </div>
+  <div class="column np-2 bd-highlight  ">
+    <app-show-products [selectedCategory]='category?.selectedCategory'></app-show-products>
+  </div>
+</div>
+<app-footer></app-footer> 

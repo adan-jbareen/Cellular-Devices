@@ -1,0 +1,47 @@
+<br><br><br><br><br><br>
+<div class="home-banner">
+<div class="card border-success mb-100" style="max-width: 40rem" >
+    <div class="card-header">
+        <h1>login</h1>
+    </div>
+    <div class="card-body">
+        <h6 class="card-title">
+            <div class="col-3">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
+                    <div class="form-group">
+                        <label><b>Name:</b></label>
+                        <br>
+                        <br>
+                        <input type="name" class="form-control" placeholder="Enter Name" name="name"
+                            formControlName="name" class="ng-invalid" required />
+                        <div *ngIf="!loginForm.controls.name?.valid && (loginForm.controls.name?.dirty || loginForm.controls.name?.touched)"
+                            style="color:red">Invalid name</div>
+                    </div>
+                    <div class="form-group">
+                        <br>
+                        <label><b>Password:</b></label>
+                        <br>
+                        <br>
+                        <input type="password" name="password" class="form-control" placeholder="Enter password"
+                            formControlName="password" class="ng-invalid" required />
+                        <div *ngIf="!loginForm.controls.password?.valid && (loginForm.controls.password?.dirty || loginForm.controls.password?.touched)"
+                            style="color:red">Invalid password</div>
+                    </div>
+                    
+                    <div class="form-check">
+                        <br>
+                        <input type="checkbox" class="form-check-input" />
+                        <label class="form-check-label">Check me out</label>
+                    </div>
+                    <br />
+                    <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary">submit</button>
+
+                </form>
+            </div>
+
+        </h6>
+    </div>
+</div>
+</div>
+
+

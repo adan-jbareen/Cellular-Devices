@@ -1,0 +1,46 @@
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(14, 5, 5, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  .card:hover{
+    box-shadow: 8px 8px 8px black;
+    transform: translatey(-10px);
+  }
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+
+  details > summary {
+    text-align: left;
+    padding: 2px;
+    width: 200px;
+    box-shadow: 1px 1px 1px #bbbbbb;
+    cursor: pointer;
+  }
+  
+  details > p {
+    text-align: left;
+    padding: 4px;
+    margin: 0;
+    
+  }
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

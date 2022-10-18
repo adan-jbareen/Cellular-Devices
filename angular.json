@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/CellularDevices",
+            "outputPath": "backend/dist/CellularDevices",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CellularDevices"
+    }
+  },
+  "defaultProject": "CellularDevices",
+  "cli": {
+    "analytics": "01df1fbb-2c3e-41bc-94e4-6d5e39436488"
+  }
 }

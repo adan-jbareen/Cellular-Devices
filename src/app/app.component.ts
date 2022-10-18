@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component , ViewChild } from '@angular/core';
+import { PrudectsComponent } from './prudects/prudects.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CellularDevices';
+  
+
 }
